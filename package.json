@@ -1,0 +1,29 @@
+{
+  "name": "hoopoun-poc",
+  "version": "1.0.0",
+  "description": "Smart contracts for the hoopoun poc",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satyamakgec/hoopoun-poc.git"
+  },
+  "author": "Satyam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/satyamakgec/hoopoun-poc/issues"
+  },
+  "homepage": "https://github.com/satyamakgec/hoopoun-poc#readme",
+  "dependencies": {
+    "openzeppelin-solidity": "^2.1.2"
+  },
+  "devDependencies": {
+    "ganache-cli": "^6.3.0",
+    "truffle": "^5.0.3"
+  }
+}
