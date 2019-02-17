@@ -12,6 +12,8 @@ contract Exchange is Ownable {
     IERC20 private _denominatedToken;
     IERC20 private _token;
 
+    mapping(address => mapping(address => uint256)) internal rates;
+
     event ConversionRateChanged(uint256 _oldConversionRate, uint256 _newConversionRate);
     event TokenExchanged(uint256 _givenAmount, uint256 _exchangedAmount, address _reciever);
 
