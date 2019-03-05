@@ -5,6 +5,13 @@ pragma solidity ^0.5.0;
  * @dev see https://github.com/ethereum/EIPs/issues/20
  */
 interface IERC20 {
+
+    function name() external view returns (string memory);
+
+    function symbol() external view returns (string memory);
+
+    function decimals() external view returns (uint8);
+
     function transfer(address to, uint256 value) external returns (bool);
 
     function approve(address spender, uint256 value) external returns (bool);

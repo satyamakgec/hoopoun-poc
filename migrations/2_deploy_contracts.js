@@ -20,7 +20,7 @@ module.exports = function(deployer, network, accounts) {
         return Token.deployed();
     }).then(_tokenB => {
         tokenB = _tokenB;
-        return deployer.deploy(Exchange, conversionRate, tokenB.address, tokenA.address, {from: owner});
+        return deployer.deploy(Exchange, tokenA.address, {from: owner});
     }).then(()=> {
         return tokenA.addMinter(Exchange.address, {from: owner});
     }).then(() => {
